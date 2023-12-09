@@ -1,0 +1,34 @@
+:root {
+  /* PRIMARY */
+  --l-red: hsl(0, 100%, 67%);
+  --oran-yel: hsl(39, 100%, 56%);
+  --g-teal: hsl(166, 100%, 37%);
+  --cobalt: hsl(234, 85%, 45%);
+
+  /* GRADIENTS */
+  /* Background */
+  --l-slate-b: hsl(252, 100%, 67%);
+  --l-royal-b: hsl(241, 81%, 54%);
+  /* Circle */
+  --violet-b: hsla(256, 72%, 46%, 1);
+  --persian-b: hsla(241, 72%, 46%, 0);
+
+  /* NEUTRALS */
+  --white: hsl(0, 0%, 100%);
+  --pale-b: hsl(221, 100%, 96%);
+  --l-lavender: hsl(241, 100%, 89%);
+  --d-gray-b: hsl(224, 30%, 27%);
+
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
