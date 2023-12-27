@@ -32,3 +32,23 @@
 
 }
 
+.container {
+  height: 512px;
+  width: 735px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid red;
+  display: flex;
+}
+
+.resultcontainer, .summarycontainer {
+  height: 100%;
+  width: 50%;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+
+}
+
