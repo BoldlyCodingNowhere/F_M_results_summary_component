@@ -1,17 +1,21 @@
 :root {
   /* PRIMARY */
   --l-red: hsl(0, 100%, 67%);
+  --l-reda: hsla(0, 100%, 67%, 0.1);
   --oran-yel: hsl(39, 100%, 56%);
+  --oran-yela: hsla(39, 100%, 56%, 0.1);
   --g-teal: hsl(166, 100%, 37%);
+  --g-teala: hsla(166, 100%, 37%, 0.1);
   --cobalt: hsl(234, 85%, 45%);
+  --cobalta: hsla(234, 85%, 45%, 0.1);
 
   /* GRADIENTS */
   /* Background */
   --l-slate-b: hsl(252, 100%, 67%);
   --l-royal-b: hsl(241, 81%, 54%);
   /* Circle */
-  --violet-b: hsla(256, 72%, 46%, 1);
-  --persian-b: hsla(241, 72%, 46%, 0);
+  --violet-b: hsla(256, 72%, 46%, 0.2);
+  --persian-b: hsla(241, 72%, 46%, 1);
 
   /* NEUTRALS */
   --white: hsl(0, 0%, 100%);
@@ -39,16 +43,84 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid red;
+  border-radius: 30px;
   display: flex;
+  box-shadow: 6px 6px 20px 5px var(--pale-b) ;
 }
+
+
 
 .resultcontainer, .summarycontainer {
   height: 100%;
   width: 50%;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
 }
 
+.resultcontainer {
+  background-color: var(--l-slate-b);
+  background-image: linear-gradient(var(--l-slate-b), var(--l-royal-b));
+  border-radius: 30px;
+}
+
+#yourresult {
+  color: var(--l-lavender);
+}
+#wordrating, #bigscore {
+  color: var(--white);
+}
+
+#bigscore {
+  font-size: 2.5rem;
+}
+.circlecontainer {
+  width: 193px;
+  height: 193px;
+  background-image: linear-gradient(var(--persian-b), var(--violet-b));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.summarycontainer {
+  border-radius: 30px;
+}
+.sumcomponent {
+  width: 290px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 17px;
+  border-radius: 10px;
+}
+
+#sumcomponentreaction {
+  background-color: var(--l-reda);
+  
+}
+
+#sumcomponentmemory {
+  background-color: var(--oran-yela);
+}
+
+#sumcomponentverbal {
+  background-color: var(--g-teala);
+}
+
+#sumcomponentvisual {
+  background-color: var(--cobalta);
+}
+
+button {
+  width: 290px;
+  height: 55px;
+  background-color: var(--d-gray-b);
+  color: var(--white);
+  border-radius: 42px; 
+}
