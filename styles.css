@@ -63,6 +63,9 @@
   background-color: var(--l-slate-b);
   background-image: linear-gradient(var(--l-slate-b), var(--l-royal-b));
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #yourresult {
@@ -89,32 +92,52 @@
 
 .summarycontainer {
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .sumcomponent {
   width: 290px;
   height: 55px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 17px;
+  justify-content: space-around;
   border-radius: 10px;
 }
 
 #sumcomponentreaction {
-  background-color: var(--l-reda);
-  
+  background-color: var(--l-reda); 
 }
 
+.testskill {
+  text-align: left;
+ }
+
+#reaction {
+  color: var(--l-red);
+}
 #sumcomponentmemory {
   background-color: var(--oran-yela);
+}
+
+#memory {
+  color: var(--oran-yel);
 }
 
 #sumcomponentverbal {
   background-color: var(--g-teala);
 }
 
+#verbal {
+  color: var(--g-teal);
+}
+
 #sumcomponentvisual {
   background-color: var(--cobalta);
+}
+
+#visual {
+  color: var(--cobalt);
 }
 
 button {
